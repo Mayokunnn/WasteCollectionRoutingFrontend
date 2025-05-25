@@ -17,8 +17,8 @@ export const fetchOptimizedRoute = async (bins: number, threshold: number): Prom
   }
 };
 
-export const getLastRouteVisualizationUrl = (): string => {
-  return `${API_BASE_URL}/view-last-route`;
+export const getLastRouteVisualizationUrl = (threshold: number): string => {
+  return `${API_BASE_URL}/view-last-route?threshold=${threshold}`;
 };
 
 export const compareAlgorithms = async (bins: number, threshold: number): Promise<AlgorithmComparisonResponse> => {

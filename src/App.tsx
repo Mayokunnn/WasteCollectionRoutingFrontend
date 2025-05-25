@@ -94,7 +94,7 @@ const App: React.FC = () => {
       <VisualizationModal 
         isOpen={modalOpen}
         onClose={() => setModalOpen(false)}
-        visualizationUrl={getLastRouteVisualizationUrl()}
+        visualizationUrl={getLastRouteVisualizationUrl(threshold)}
       />
     </div>
   );

@@ -40,7 +40,7 @@ const RouteForm: React.FC<RouteFormProps> = ({ onSubmit, isLoading }) => {
         <input
           id="threshold"
           type="number"
-          min="0.1"
+          min="0.0"
           max="1"
           step="0.1"
           value={threshold}
