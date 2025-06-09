@@ -1,6 +1,6 @@
 import { AlgorithmComparisonResponse, RouteResponse } from '../types/types';
 
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = 'https://wastecollectionroutingbackend.onrender.com/';
 
 export const fetchOptimizedRoute = async (bins: number, threshold: number): Promise<RouteResponse> => {
   try {
